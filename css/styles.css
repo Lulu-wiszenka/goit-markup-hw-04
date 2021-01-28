@@ -8,7 +8,8 @@
   --hero-btn-hover: #188ce8;
   --background-grey-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --icon-header-color: #757575;
+  --icon-header-color: #757575; /*color4*/
+  --icon-social-color: #afb1b8; /*color3*/
   --hero-gradient-color: rgba(47, 48, 58, 0.4);
 
   --text-main-font: Roboto, sans-serif;
@@ -288,8 +289,7 @@ img {
   padding-bottom: 94px;
 }
 
-.services-title,
-.team-title {
+.normal-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -363,16 +363,15 @@ img {
   color: var(--main-text-color);
 }
 
+/* =========== SOCIAL========== */
+
 .social-list-icon {
   display: flex;
 }
 
 .social-item-icon {
-  /* width: 44px;
-  height: 44px; */
-  border-radius: 50%;
-
-  background-color: aqua;
+  width: 44px;
+  height: 44px;
 }
 
 .social-item-icon:not(:last-child) {
@@ -380,24 +379,91 @@ img {
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color-blue);
+}
+
+.social-link:hover .icon-social,
+.social-link:focus .icon-social {
+  fill: var(--text-white-color);
 }
 
 .icon-social {
   width: 20px;
   height: 20px;
+  fill: var(--icon-social-color);
 }
-.social-link:hover .icon-social {
-  background-color: var(--accent-color-blue);
-  fill: var(--text-white-color);
-}
-/* ============ END TEAM ============ */
 
+/* ============ END TEAM ============ */
+/* ============ OUR CLIENTS ============ */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 90px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-social-color);
+  border-radius: 4px;
+}
+
+.icon-clients {
+  width: 44.27px;
+  height: 49.23px;
+  fill: var(--icon-social-color);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border: 1px solid var(--accent-color-blue);
+}
+
+.clients-item-link:hover .icon-clients,
+.clients-item-link:focus .icon-clients {
+  fill: var(--accent-color-blue);
+}
+
+/* ============ END OUR CLIENTS ============ */
 /* ============ FOOTER ============ */
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-background-color);
+}
+
+.footer-container {
+  display: flex;
+}
+.footer-address-container {
+  margin-right: 70px;
 }
 
 .footer-logo-link {
@@ -428,6 +494,26 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--text-white-color);
+}
+
+.footer-icon-container {
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-social {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ============ END FOOTER ============ */
