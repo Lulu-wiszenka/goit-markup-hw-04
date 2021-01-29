@@ -252,11 +252,10 @@ img {
 .icon-advantages-box {
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   border-radius: 4px;
   background-color: var(--background-grey-color);
 }
@@ -564,6 +563,8 @@ img {
   background-color: var(--accent-color-blue);
   border: 2px solid transparent;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ============ END BUTTON-NAVIGATION ============ */
@@ -584,8 +585,8 @@ img {
 
 .work-examples-link {
   display: block;
-  width: 368px;
-  height: 402px;
+  width: 100%;
+  height: 404px;
   border: 1px solid var(--work-examples-border);
 }
 
@@ -596,15 +597,14 @@ img {
 }
 
 .img-description {
-  width: 370px;
-  height: 110px;
+  width: 100%;
   padding: 20px 24px;
 }
 
-.work-examples-img {
+/* .work-examples-img {
   width: 370px;
   height: 294px;
-}
+} */
 
 .work-examples-title {
   margin-bottom: 4px;
