@@ -437,8 +437,6 @@ img {
 }
 
 .icon-clients {
-  width: 44.27px;
-  height: 49.23px;
   fill: var(--icon-social-color);
 }
 
@@ -463,6 +461,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-address-container {
   margin-right: 70px;
@@ -498,10 +497,7 @@ img {
   color: var(--text-white-color);
 }
 
-.footer-icon-container {
-  padding-top: 12px;
-  padding-bottom: 40px;
-}
+/* .footer-icon-container {} */
 
 .footer-title {
   margin-bottom: 20px;
